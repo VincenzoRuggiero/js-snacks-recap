@@ -4,8 +4,14 @@ createApp({
   data() {
     return {
       guests: [],
-      guest: null,
+      guest: '',
+      invited: false;
     };
+  },
+  methods: {
+    checkIsInvited(guest){
+      this.invited =  this.guests.includes(guest)
+    }
   },
   mounted() {
     for (let i = 0; i < 10; i++) {
@@ -20,4 +26,5 @@ createApp({
 }).mount("#app");
 
 let ask = document.getElementById("#ask");
-ask = prompt("Dica il suo nome");
+ask = prompt("Dica il suo nome").value;
+let guestName = ask;

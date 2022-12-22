@@ -1,0 +1,16 @@
+.message {
+  width: 300px;
+  color: black;
+}
+
+input {
+  margin-bottom: 30px;
+}
+
+.receveid {
+  background-color: lightgreen;
+}
+
+.sent {
+  background-color: darkorange;
+}
